@@ -21,7 +21,6 @@ public class Process {
         if (numberOfShuffles >= 0) {
             List<Card> shuffledList = shuffleCards(numberOfShuffles, cardList);
 
-            System.out.println("Shuffled Cards:");
             printCardList(shuffledList);
         } else {
             System.err.println("invalid input");
