@@ -23,7 +23,6 @@ public class Process {
 
             printCardList(shuffledList);
         } else {
-
             System.err.println("invalid input");
         }
     }
