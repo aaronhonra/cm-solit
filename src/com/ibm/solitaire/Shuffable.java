@@ -4,4 +4,5 @@ public interface Shuffable<E extends Card> {
     void shuffle();
     
     
+    
 }
