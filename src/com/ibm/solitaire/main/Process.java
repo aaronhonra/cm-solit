@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.ibm.solitaire.Card;
+import com.ibm.solitaire.*;
 import com.ibm.solitaire.cons.Color;
 import com.ibm.solitaire.cons.Type;
 
@@ -23,6 +23,7 @@ public class Process {
 
             printCardList(shuffledList);
         } else {
+
             System.err.println("invalid input");
         }
     }
@@ -46,31 +47,57 @@ public class Process {
     }
 
     private static List<Card> createCards() {
-        List<Card> cardList = new ArrayList<>();
+        Deck<Card> deck = new Deck<>(52);
+        for (int i = 1,  ctr = 1; i <= 13 && ctr <= 4; i++) {
 
-        for (int i = 0, counter = 1; i < 52; i++, counter++) {
-            Card card = new Card();
-            if (i <= 12) {
-                card.setColor(Color.BLACK);
-                card.setType(Type.CLUBS);
-            } else if (i > 12 && i <= 25) {
-                card.setColor(Color.RED);
-                card.setType(Type.DIAMOND);
-            } else if (i > 25 && i <= 38) {
-                card.setColor(Color.RED);
-                card.setType(Type.HEART);
-            } else if (i > 38 && i <= 51) {
-                card.setColor(Color.BLACK);
-                card.setType(Type.SPADE);
+            char value = (char) i;
+
+            switch (i){
+                case 11:
+                    value = 'J';
+                    break;
+                case 12:
+                    value = 'Q';
+                    break;
+                case 13:
+                    value = 'K';
+                    break;
+                case 1:
+                    value = 'A';
+                    break;
             }
 
-            card.setValue(counter);
-            cardList.add(card);
-            if (counter % 13 == 0) {
-                counter = 0;
+            switch (ctr){
+                case 1:
+                    HeartCard heart = new HeartCard();
+                    heart.setValue(value);
+                    deck.add(heart);
+                    break;
+                case 2:
+                    DiamondCard diamond = new DiamondCard();
+                    diamond.setValue(value);
+                    deck.add(diamond);
+                    break;
+                case 3:
+                    ClubCard club = new ClubCard();
+                    club.setValue(value);
+                    deck.add(club);
+                    break;
+                case 4:
+                    SpadeCard spade = new SpadeCard();
+                    spade.setValue(value);
+                    deck.add(spade);
+                    break;
             }
+            if(i==13){
+                ctr++;
+                i = 0;
+            }
+
+
+
         }
 
-        return cardList;
+        return deck;
     }
 }

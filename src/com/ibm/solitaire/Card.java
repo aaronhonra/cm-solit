@@ -3,47 +3,19 @@ package com.ibm.solitaire;
 import com.ibm.solitaire.cons.Color;
 import com.ibm.solitaire.cons.Type;
 
-public class Card {
-    private String name;
-    private int value;
-    private boolean isFlipped;
-    private Color color;
+public abstract class Card {
 
-    public Type getType() {
-        return type;
-    }
+    public abstract Type getType();
 
-    public void setType(Type type) {
-        this.type = type;
-    }
+    public abstract String getName();
 
-    private Type type;
+    public abstract Character getValue();
 
-    public String getName() {
-        return type.value() + value ;
-    }
+    public abstract void setValue(Character value);
 
-    public int getValue() {
-        return value;
-    }
+    public abstract boolean isFlipped();
 
-    public void setValue(int value) {
-        this.value = value;
-    }
+    public abstract void setFlipped(boolean flipped);
 
-    public boolean isFlipped() {
-        return isFlipped;
-    }
-
-    public void setFlipped(boolean flipped) {
-        isFlipped = flipped;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
-    }
+    public abstract Color getColor();
 }
