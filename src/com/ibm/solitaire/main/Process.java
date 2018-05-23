@@ -9,7 +9,7 @@ import com.ibm.solitaire.cons.Color;
 import com.ibm.solitaire.cons.Type;
 
 public class Process {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         List<Card> cardList = createCards();
 
         System.out.println("Current Cards:");
