@@ -8,8 +8,6 @@ import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.omg.CosNaming.IstringHelper;
-
 /*
  * By Anie Brimon
  * */
@@ -453,7 +451,7 @@ public class SolitaireMainWithObj {
 						//linkedListFrom.poll();
 						//System.out.println("A0:" + linkedListFrom.get(0).getCardName());
 						//System.out.println("A:" + linkedListFrom.get(startInterval).getCardName());
-						System.out.println("times = " + times + ", startInterval = " + startInterval );
+						//System.out.println("times = " + times + ", startInterval = " + startInterval );
 						startInterval--;
 
 					}
