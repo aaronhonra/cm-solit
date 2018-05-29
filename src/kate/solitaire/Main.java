@@ -7,8 +7,8 @@ import java.util.Scanner;
 import java.util.function.Predicate;
 
 import com.ibm.kate.solitaire.Card;
-import com.ibm.solitaire.constants.Color;
-import com.ibm.solitaire.constants.Type;
+import com.ibm.solitaire.cons.Color;
+import com.ibm.solitaire.cons.Type;
 
 public class Main{
 
