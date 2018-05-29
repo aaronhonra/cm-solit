@@ -1,4 +1,4 @@
-package kate.solitaire;
+package solitaire;
 
 import com.ibm.solitaire.cons.Color;
 import com.ibm.solitaire.cons.Type;

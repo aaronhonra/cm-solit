@@ -1,12 +1,10 @@
-package kate.solitaire;
+package solitaire;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.Predicate;
 
-import kate.solitaire.Card;
 import com.ibm.solitaire.cons.Color;
 import com.ibm.solitaire.cons.Type;
 

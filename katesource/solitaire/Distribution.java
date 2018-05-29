@@ -1,4 +1,4 @@
-package kate.solitaire;
+package solitaire;
 
 import java.util.List;
 
