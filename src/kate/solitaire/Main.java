@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.function.Predicate;
 
-import com.ibm.kate.solitaire.Card;
+import kate.solitaire.Card;
 import com.ibm.solitaire.cons.Color;
 import com.ibm.solitaire.cons.Type;
 
