@@ -1,4 +1,4 @@
-package com.ibm.solitaire.Anie;
+package Anie;
 
 import com.ibm.solitaire.Anie.Color;
 

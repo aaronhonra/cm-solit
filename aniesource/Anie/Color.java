@@ -1,4 +1,4 @@
-package com.ibm.solitaire.Anie;
+package Anie;
 
 public enum Color {
 	RED,

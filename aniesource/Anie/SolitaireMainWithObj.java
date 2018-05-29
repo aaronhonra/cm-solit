@@ -1,4 +1,4 @@
-package com.ibm.solitaire.Anie;
+package Anie;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -54,10 +54,10 @@ public class SolitaireMainWithObj {
 	
 	private List<Card> prepareCards(List<Card> cardsAll) {
 		
-		List<Clubs> clubsCardList = new ArrayList<Clubs>();
-		List<Diamond> diamondCardList = new ArrayList<Diamond>();		
-		List<Heart> heartCardList = new ArrayList<Heart>();
-		List<Spades> spadesCardList = new ArrayList<Spades>();
+		List<Anie.Clubs> clubsCardList = new ArrayList<Anie.Clubs>();
+		List<Anie.Diamond> diamondCardList = new ArrayList<Anie.Diamond>();
+		List<Anie.Heart> heartCardList = new ArrayList<Anie.Heart>();
+		List<Anie.Spades> spadesCardList = new ArrayList<Anie.Spades>();
 		int ind = 0;
 
 		for (int x=0; x<CARD_COUNT_PER_SUIT; x++) {
@@ -70,7 +70,7 @@ public class SolitaireMainWithObj {
 				strB.append("0");
 			}
 			strB.append(String.valueOf(ind));
-			clubsCardList.add(new Clubs(strB.toString()));
+			clubsCardList.add(new Anie.Clubs(strB.toString()));
 			clubsCardList.get(x).setCardBackFace(strB.toString() + BACK);
 			clubsCardList.get(x).setCardFrontFace(strB.toString() + FRONT);
 			//System.out.print(clubsCardList.get(x).getCardName() + ", ");
@@ -82,7 +82,7 @@ public class SolitaireMainWithObj {
 				strB.append("0");
 			}
 			strB.append(String.valueOf(ind));
-			diamondCardList.add(new Diamond(strB.toString()));
+			diamondCardList.add(new Anie.Diamond(strB.toString()));
 			diamondCardList.get(x).setCardBackFace(strB.toString() + BACK);
 			diamondCardList.get(x).setCardFrontFace(strB.toString() + FRONT);
 			//System.out.print(diamondCardList.get(x).getCardName() + ", ");
@@ -94,7 +94,7 @@ public class SolitaireMainWithObj {
 				strB.append("0");
 			}
 			strB.append(String.valueOf(ind));
-			heartCardList.add(new Heart(strB.toString()));	
+			heartCardList.add(new Anie.Heart(strB.toString()));
 			heartCardList.get(x).setCardBackFace(strB.toString() + BACK);
 			heartCardList.get(x).setCardFrontFace(strB.toString() + FRONT);
 			//System.out.print(heartCardList.get(x).getCardName() + ", ");
@@ -106,7 +106,7 @@ public class SolitaireMainWithObj {
 				strB.append("0");
 			}
 			strB.append(String.valueOf(ind));
-			spadesCardList.add(new Spades(strB.toString()));	
+			spadesCardList.add(new Anie.Spades(strB.toString()));
 			spadesCardList.get(x).setCardBackFace(strB.toString() + BACK);
 			spadesCardList.get(x).setCardFrontFace(strB.toString() + FRONT);
 			//System.out.println(spadesCardList.get(x).getCardName() + ", getBackFace: " + spadesCardList.get(x).getCardBackFace());
