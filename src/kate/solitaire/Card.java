@@ -1,7 +1,7 @@
-package com.ibm.kate.solitaire;
+package kate.solitaire;
 
-import com.ibm.solitaire.constants.Color;
-import com.ibm.solitaire.constants.Type;
+import com.ibm.solitaire.cons.Color;
+import com.ibm.solitaire.cons.Type;
 
 public class Card {
 	private int rank;

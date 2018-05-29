@@ -1,4 +1,4 @@
-package com.ibm.kate.solitaire;
+package kate.solitaire;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
